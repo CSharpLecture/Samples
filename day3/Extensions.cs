@@ -13,7 +13,7 @@ namespace Whatever
         {
             int i = 5;
             //We can use extension methods as if they have been designed for the object
-            i.Print();
+            i.Dump();
 
             //We now extended EVERY object in C#, since we applied the extension method
             //for this object
@@ -25,7 +25,7 @@ namespace Whatever
             //defined in some class. Hence the following way is also possible, however,
             //We see that this is a.) not as short as the other way and b.) from an
             //object-oriented perspective not very meaningful.
-            MyExtensions.Print("Another way");
+            MyExtensions.Dump("Another way");
         }
     }
 }
@@ -37,7 +37,7 @@ namespace ExtNS
     static class MyExtensions
     {
         //A dump method to output any object to the console
-        public static void Print(this object o)
+        public static void Dump(this object o)
         {
             Console.WriteLine("Extension method used!");
             Console.WriteLine(o);
