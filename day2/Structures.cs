@@ -16,7 +16,7 @@ class Program
 	static void HaveALook(out SampleClass c)
 	{
 		//Insert a breakpoint here to see the
-		//value of s before the assignment:
+		//value of c before the assignment:
 		//It will be null...
 		c = new SampleClass();
 	}
