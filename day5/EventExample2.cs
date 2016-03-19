@@ -39,7 +39,7 @@ namespace Events
         }
 
         //This is the function that will be called when the pageLoaded-event is fired
-        //it takes MyWebSurferEventArgs to transmit the message and whether the request was successful
+        //it takes MyWebSurferEventArgs to transmit the message
         private static void Surfi_pageLoaded(object sender, MyWebSurferEventArgs e)
         {
             //give out result which is saved in the message property
